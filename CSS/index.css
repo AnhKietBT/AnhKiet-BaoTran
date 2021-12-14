@@ -1,0 +1,906 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    src: url(../Font/MYRIADPRO-REGULAR.OTF);
+    font-family: Myriad pro;
+}
+header {
+    width: 100%;
+    height: 127px;
+    display: flex;
+    justify-content: space-between;
+}
+header img {
+    width: 260px;
+    height: 50px;
+    margin-left: 65px;
+    margin-top: 45px;
+    cursor: pointer;
+}
+header ul{  display: flex;}
+header ul li.hover {
+    list-style: none;
+    margin: 0 25px;
+    padding: 55px 25px 55px 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: Myriad pro;
+    font-weight: 600;
+}
+header ul li.active {
+    list-style: none;
+    margin: 0 25px;
+    padding: 55px 25px 55px 25px;
+    cursor: pointer;
+    background: #2e5ed9 url(../Images/Rectangle.jpg) repeat top left;
+    font-family: Myriad pro;
+    font-weight: 600;
+    color: white;
+}
+header ul li.hover:hover {  background: #7d7e81;}
+.bgimg img {
+    width: 100%;
+    height: 765px;
+}
+._4cot {
+    width: calc(100% - 112px);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    top: -130px;
+    z-index: 1;
+}
+._4cot ._1cot1 {
+    padding: 28px;
+    width: calc((100% -  75px) / 4);
+    height: 360px;
+    display: inline-block;
+    position: absolute;
+    top: 0; left: 0;
+    background: #ff9d09 url(../Images/Rectangle4.jpg) repeat top left;
+}
+._4cot ._1cot2 {
+    padding: 28px;
+    width: calc((100% -  75px) / 4);
+    height: 360px;
+    display: inline-block;
+    position: absolute;
+    top: 0; left: calc(((100% -  75px) / 4) + 25px);
+    background: #645de7 url(../Images/Rectangle3.jpg) repeat top left;
+}
+._4cot ._1cot3 {
+    padding: 28px;
+    width: calc((100% -  75px) / 4);
+    height: 360px;
+    display: inline-block;
+    position: absolute;
+    top: 0; right: calc(((100% -  75px) / 4) + 25px);
+    background: #ff2770 url(../Images/Rectangle2.jpg) repeat top left;
+}
+._4cot ._1cot4 {
+    padding: 28px;
+    width: calc((100% -  75px) / 4);
+    height: 360px;
+    display: inline-block;
+    position: absolute;
+    top: 0; right: 0;
+    background: #de19e4 url(../Images/Rectangle1.jpg) repeat top left;
+}
+.chulon {
+    font-family: Myriad pro;
+    font-size: 50px;
+    line-height: 53px;
+    color: white;
+}
+.chia2 {
+    width: 100%;
+    display: flex;
+    margin-top: 28px;
+    justify-content: space-between;
+}
+.chia2 .chunho {
+    width: 80%;
+    font-family: Myriad pro;
+    font-size: 20px;
+    line-height: auto;
+    color: white;
+}
+.chia2 i {
+    width: 26px;
+    height: 35px;
+    position: absolute;
+    bottom: 35px;
+    right: 22px;
+    font-size: 50px;
+    color: white;
+}
+._2cot {
+    width: calc(100% - 112px);
+    display: flex;
+    justify-content: space-between;
+    margin: 278px auto 0 auto;
+}
+.cottrai {
+    width: calc(50% - 12.5px);
+    height: 462px;
+    background: #f7f7f7 url(../Images/Rectangle7.jpg) repeat top left;
+    padding: 105px 58px;
+}
+.cottrai .textbig {
+    font-family: Myriad pro;
+    font-size: 50px;
+    line-height: 53px;
+    color: black;
+    margin-bottom: 35px;
+}
+.cottrai p {
+    font-family: Myriad pro;
+    font-size: 20px;
+    line-height: auto;
+    color: #545454;
+}
+.cottrai .check {
+    width: 200px;
+    padding: 19px 55px;
+    margin-top: 30px;
+    background: #ff6025 url(../Images/Rectangle5.jpg);
+    font-family: Myriad pro;
+    font-size: 20px;
+    line-height: auto;
+    color: white;
+    cursor: pointer;
+}
+.cottrai .check:hover {
+    padding: 17px 45px;
+    font-size: 23px;
+}
+.cotphai {
+    width: calc(50% - 12.5px);
+    height: 462px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.cotphai img.cotphai {
+    width: 100%;
+    height: 100%;
+    top: 0px; left: 0px;
+    position: absolute;
+}
+.cotphai img.cotphai:hover {  transform: scale(1.1);}
+._2cotduoi {
+    width: calc(100% - 112px);
+    display: flex;
+    justify-content: space-between;
+    margin: 54px auto 0 auto;
+}
+._2cotduoi .cottrai {
+    width: calc(50% - 12.5px);
+    height: 462px;
+    background: #f7f7f7 url(../Images/Rectangle7.jpg) repeat top left;
+    padding: 77px 55px;
+}
+.swim {
+    width: 100%;
+    height: 667px;
+    margin-top: 59px;
+    background: url(../Images/backgroup1.jpg);
+}
+.chualayer {  
+    width: calc(100% - 112px);
+    height: 100%;
+    margin: 0 auto;
+}
+.chualayer .layer {
+    width: calc(50% - 12.5px);
+    height: 100%;
+    padding: 85px 70px;
+    background: #e01283 url(../Images/background2.jpg);
+    opacity: 0.9;
+}
+.layer .region {
+    font-family: Myriad pro;
+    font-size: 50px;
+    line-height: 53px;
+    color: white;
+    margin-bottom: 60px;
+}
+.layer .text1 {
+    font-family: Myriad pro;
+    font-size: 20px;
+    line-height: auto;
+    color: white;
+    margin-bottom: 40px;
+}
+.layer .text2 {
+    font-family: Myriad pro;
+    font-size: 20px;
+    line-height: auto;
+    color: white;
+    margin-bottom: 55px;
+}
+.layer .know {
+    width: 200px;
+    padding: 19px 52px;
+    background: white;
+    font-family: Myriad pro;
+    font-size: 20px;
+    line-height: auto;
+    color: black;
+    cursor: pointer;
+}
+.layer .know:hover {
+    padding: 17px 42px;
+    font-size: 23px;
+}
+._2cotduoiswim {
+    width: calc(100% - 112px);
+    height: 462px;
+    display: flex;
+    justify-content: space-between;
+    margin: 54px auto 0 auto;
+}
+.cotmau {
+    width: calc(50% - 12.5px);
+    height: 100%;
+    background: #ffae12 url(../Images/vangcam.jpg);
+    padding: 77px 70px;
+}
+.cotmau .title {
+    margin-bottom: 17px;
+    font-family: Myriad pro;
+    font-size: 50px;
+    line-height: 53px;
+    color: white;
+}
+.cotmau .chiadoi {
+    width: 100%;
+    display: flex;
+    margin-left: 5px;
+    margin-top: 25px;
+}
+.chiadoi p {
+    margin: auto 0 auto 20px;
+    font-family: Myriad pro;
+    font-size: 20px;
+    line-height: auto;
+    color: white;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.cotmau .chiadoi p:hover { text-decoration: underline;}
+.cotanh {
+    width: calc(50% - 12.5px);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.cotanh img.cotanh {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    transition: 0.4s;
+}
+.cotanh img.cotanh:hover {  transform: scale(1.1);}
+._4cotinfor {
+    width: calc(100% - 112px);
+    height: 390px;
+    display: flex;
+    justify-content: space-between;
+    margin: 162px auto 0 auto;
+    position: relative;
+}
+._4cotinfor .infor {
+    width: calc((100% -  75px) / 4);
+    height: 100%;
+    background: #f3f3f3 url(../Images/Rectangle6.jpg);
+    padding: 120px 35px 35px 35px;
+}
+.infor img.in41 {
+    position: absolute;
+    border-radius: 50%;
+    top: -92px; left: calc(((100% -  75px) / 4) * 0.183);
+}
+.infor img.in42 {
+    position: absolute;
+    border-radius: 50%;
+    top: -92px; left: calc(((100% -  75px) / 4) + 25px + calc(((100% -  75px) / 4) * 0.183));
+}
+.infor img.in43 {
+    position: absolute;
+    border-radius: 50%;
+    top: -92px; right: calc(((100% -  75px) / 4) + 25px + calc(((100% -  75px) / 4) * 0.183));
+}
+.infor img.in44 {
+    position: absolute;
+    border-radius: 50%;
+    top: -92px; right: calc(((100% -  75px) / 4) * 0.183);
+}
+.infor p {
+    margin-bottom: 34px;
+    font-family: Myriad pro;
+    font-size: 20px;
+    line-height: 34px;
+    color: #515151;
+}
+.infor p.name {
+    font-family: Myriad pro;
+    font-size: 34px;
+    line-height: 34px;
+    color: #ff6300;
+}
+.contacts {
+    width: calc(100% - 112px);
+    height: 462px;
+    margin: 70px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contacts .contactus {
+    width: calc(50% - 12.5px);
+    height: 100%;
+    background: #0084ce url(../Images/Shape.jpg);
+    padding: 65px 50px 50px 50px;
+}
+.contactus p.contact {
+    font-family: Myriad pro;
+    font-size: 50px;
+    line-height: 53px;
+    color: white;
+    margin-bottom: 20px;
+}
+.contactus p.address {
+    font-family: Myriad pro;
+    font-size: 20px;
+    line-height: 36px;
+    color: white;
+    margin-bottom: 20px;
+}
+.sdt {
+    width: 100%;
+    display: flex;
+}
+.sdt i {
+    height: 55px;
+    color: #0080cb;
+    font-size: 55px;
+    padding: 0 15px 0 15px;
+    border-radius: 50%;
+    background: white;
+}
+.sdt p.sdt {
+    font-family: Myriad pro;
+    font-size: 50px;
+    line-height: 53px;
+    color: white;
+    margin-left: 17px;
+    margin-bottom: 20px;
+}
+.contactus p.email {
+    font-family: Myriad pro;
+    font-size: 20px;
+    line-height: 36px;
+    color: white;
+    margin-bottom: 20px;
+}
+.contactus .icon i {
+    height: 50px;
+    color: #0080cb;
+    font-size: 40px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.contactus .icon i#face {
+    height: 50px;
+    color: #0080cb;
+    font-size: 40px;
+    padding: 5px 5px 5px 20px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.contacts img.map {
+    width: calc(50% - 12.5px);
+    height: 100%;
+}
+footer {
+    text-align: center;
+    padding: 80px 0;
+    font-family: Myriad pro;
+    font-size: 20px;
+    line-height: 36px;
+    color: black;
+}
+@media (max-width: 1200px) {
+    ._4cot ._1cot1 {
+        padding: 28px;
+        height: 320px;
+    }
+    ._4cot ._1cot2 {
+        padding: 28px;
+        height: 320px;
+    }
+    ._4cot ._1cot3 {
+        padding: 28px;
+        height: 320px;
+    }
+    ._4cot ._1cot4 {
+        padding: 28px;
+        height: 320px;
+    }
+    .chulon {
+        font-size: 40px;
+        line-height: 43px;
+    }
+    .chia2 {  margin-top: 28px;}
+    .chia2 .chunho {
+        width: 90%;
+        font-size: 18px;
+    }
+    .chia2 i {
+        width: 21px;
+        height: 30px;
+        bottom: 35px;
+        right: 22px;
+        font-size: 40px;
+    }
+    .layer .region {  margin-bottom: 40px;}
+
+    .layer .text1 {   margin-bottom: 20px;}
+
+    .layer .text2 {  margin-bottom: 35px;}
+
+    .chiadoi p {  font-size: 18px;}
+
+    ._4cotinfor {  height: 370px;}
+
+    ._4cotinfor .infor {
+        padding: 100px 32px 32px 32px;
+    }
+    .infor img.in41 {
+        height: 45%;
+    }
+    .infor img.in42 {
+        height: 45%;
+    }
+    .infor img.in43 {
+        height: 45%;
+    }
+    .infor img.in44 {
+        height: 45%;
+    }
+    .infor p {
+        margin-bottom: 30px;
+        font-family: Myriad pro;
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .infor p.name {
+        font-family: Myriad pro;
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+@media (max-width: 992px) {
+    header ul li.hover {  padding: 50px 15px 50px 15px;}
+
+    header ul li.active {  padding: 50px 15px 50px 15px;}
+
+    .bgimg img {
+        width: 100%;
+        height: 600px;
+    }
+    ._4cot ._1cot1 {
+        padding: 20px;
+        height: 270px;
+    }
+    ._4cot ._1cot2 {
+        padding: 20px;
+        height: 270px;
+    }
+    ._4cot ._1cot3 {
+        padding: 20px;
+        height: 270px;
+    }
+    ._4cot ._1cot4 {
+        padding: 20px;
+        height: 270px;
+    }
+    .chulon {
+        font-size: 34px;
+        line-height: 33px;
+    }
+    .chia2 {  margin-top: 25px;}
+
+    .chia2 .chunho {
+        width: 85%;
+        font-size: 15px;
+    }
+    .chia2 i {
+        width: 20px;
+        height: 29px;
+        bottom: 36px;
+        right: 16px;
+        font-size: 35px;
+    }
+    ._2cot {  margin: 190px auto 0 auto;}
+
+    .cottrai {
+        height: 390px;
+        padding: 50px 28px;
+    }
+    .cottrai .textbig {
+        font-size: 45px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+    .cottrai p {  font-size: 20px;}
+
+    .cottrai .check {
+        width: 150px;
+        padding: 18px 40px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    .cottrai .check:hover {
+        padding: 16px 30px;
+        font-size: 18px;
+    }
+    .cotphai {  height: 390px;}
+ 
+    ._2cotduoi {  margin: 50px auto 0 auto;}
+
+    ._2cotduoi .cottrai {
+        height: 390px;
+        padding: 50px 28px;
+    }
+    .swim {
+        height: 550px;
+        margin-top: 54px;
+    }
+    .chualayer .layer {  padding: 55px 40px;}
+
+    .layer .region {
+        font-size: 40px;
+        line-height: 43px;
+        margin-bottom: 30px;
+    }
+    .layer .text1 {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+    .layer .text2 {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+    .layer .know {
+        width: 150px;
+        padding: 18px 38px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    .layer .know:hover {
+        padding: 16px 28px;
+        font-size: 18px;
+    }
+    ._2cotduoiswim {  height: 390px;}
+
+    .cotmau {  padding: 47px 40px;}
+
+    .cotmau .title {
+        margin-bottom: 16px;
+        font-size: 40px;
+        line-height: 43px;
+    }
+    .cotmau .chiadoi {  margin-top: 20px;}
+
+    .chiadoi p {
+        margin: auto 0 auto 10px;
+        font-size: 16px;
+    }
+    ._4cotinfor {
+        height: 300px;
+        margin: 142px auto 0 auto;
+    }
+    ._4cotinfor .infor {  padding: 90px 29px 29px 29px;}
+
+    .infor img.in41 {  
+        top: -80px; 
+        font-size: 30%;
+    }
+
+    .infor img.in42 {
+        top: -80px;
+        font-size: 30%;
+    }
+    .infor img.in43 {
+        top: -80px;
+        font-size: 30%;
+    }
+    .infor img.in44 {
+        top: -80px;
+        font-size: 30%;
+    }
+    .infor p {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .infor p.name {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .contacts {
+        height: 390px;
+        margin: 54px auto 0 auto;
+    }
+    .contacts .contactus {
+        padding: 45px 30px 30px 30px;
+    }
+    .contactus p.contact {
+        font-size: 40px;
+        line-height: 43px;
+        margin-bottom: 20px;
+    }
+    .contactus p.address {
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .sdt {  margin-bottom: 20px;}
+
+    .sdt i {
+        height: 35px;
+        font-size: 35px;
+        padding: 0 10px 0 10px;
+        margin: auto 0;
+    }
+    .sdt p.sdt {
+        font-size: 40px;
+        line-height: 43px;
+        margin: auto 0 auto 10px;
+    }
+    .contactus p.email {
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .contactus .icon i {
+        height: 30px;
+        font-size: 25px;
+        padding: 2px 7px 2px 7px;
+        margin-right: 10px;
+    }
+    .contactus .icon i#face {
+        height: 30px;
+        font-size: 25px;
+        padding: 2px 2px 2px 17px;
+        margin-right: 10px;
+    }
+    footer {  padding: 50px 0;}
+}
+@media (max-width: 768px){
+    header {  height: 80px;}
+
+    header img {
+        width: 150px;
+        height: 40px;
+        margin: auto;
+    }
+    header ul li.hover {
+        margin: auto 20px;
+        padding: 35px 10px;
+    }
+    header ul li.active {
+        margin: auto 20px;
+        padding: 35px 10px;
+    }
+    .bgimg img {  height: 465px;}
+
+    ._4cot {  top: -80px;}
+
+    ._4cot ._1cot1 {
+        padding: 10px;
+        height: 200px;
+    }
+    ._4cot ._1cot2 {
+        padding: 10px;
+        height: 200px;
+    }
+    ._4cot ._1cot3 {
+        padding: 10px;
+        height: 200px;
+    }
+    ._4cot ._1cot4 {
+        padding: 10px;
+        height: 200px;
+    }
+    .chulon {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .chia2 {  margin-top: 10px;}
+
+    .chia2 .chunho {
+        width: 90%;
+        font-size: 12px;
+    }
+    .chia2 i {
+        width: 10px;
+        height: 15px;
+        bottom: 35px;
+        right: 22px;
+        font-size: 30px;
+    }
+    ._2cot {  margin: 165px auto 0 auto;}
+
+    .cottrai {
+        height: 300px;
+        padding: 30px 18px;
+    }
+    .cottrai .textbig {
+        font-size: 25px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+    .cottrai p {  font-size: 15px;}
+
+    .cottrai .check {
+        width: 100px;
+        padding: 10px 15px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    .cottrai .check:hover {
+        padding: 8px 5px;
+        font-size: 18px;
+    }
+    .cotphai {  height: 300px;}
+
+    ._2cotduoi {  margin: 45px auto 0 auto;}
+
+    ._2cotduoi .cottrai {
+        height: 300px;
+        padding: 37px 25px;
+    }
+    .swim {
+        height: 400px;
+        margin-top: 50px;
+    }
+    .chualayer .layer {  padding: 35px 20px;}
+
+    .layer .region {
+        font-size: 30px;
+        line-height: 33px;
+        margin-bottom: 30px;
+    }
+    .layer .text1 {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .layer .text2 {
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+    .layer .know {
+        width: 100px;
+        padding: 10px 16px;
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    .layer .know:hover {
+        padding: 8px 6px;
+        font-size: 16px;
+    }
+    ._2cotduoiswim {
+        height: 300px;
+        margin: 50px auto 0 auto;
+    }
+    .cotmau {  padding: 30px 25px;}
+
+    .cotmau .title {
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 33px;
+    }
+    .cotmau .chiadoi {
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+    .chiadoi p {
+        margin: auto 0 auto 15px;
+        font-size: 12px;
+    }
+    ._4cotinfor {
+        height: 250px;
+        margin: 80px auto 0 auto;
+    }
+    ._4cotinfor .infor { padding: 65px 5px 5px 5px;}
+
+    .infor img.in41 {  
+        top: -55px;
+        left: calc(((100% -  75px) / 4) * 0.12);
+    }
+
+    .infor img.in42 {  
+        top: -55px;
+        left: calc(((100% -  75px) / 4) + 25px + calc(((100% -  75px) / 4) * 0.12));
+    }
+
+    .infor img.in43 {  
+        top: -55px;
+        right: calc(((100% -  75px) / 4) + 25px + calc(((100% -  75px) / 4) * 0.12));
+    }
+
+    .infor img.in44 { 
+        top: -55px;
+        right: calc(((100% -  75px) / 4) * 0.12);
+    }
+
+    .infor p {
+        margin-bottom: 20px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .infor p.name {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .contacts {
+        height: 300px;
+        margin: 50px auto 0 auto;
+    }
+    .contacts .contactus {  padding: 35px 20px 20px 20px;}
+
+    .contactus p.contact {
+        font-size: 30px;
+        line-height: 33px;
+        margin-bottom: 10px;
+    }
+    .contactus p.address {
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .sdt i {
+        height: 25px;
+        font-size: 25px;
+        padding: 0 10px 0 10px;
+    }
+    .sdt p.sdt {
+        font-size: 30px;
+        line-height: 33px;
+        margin: auto 0 auto 15px;
+    }
+    .contactus p.email {
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .contactus .icon i {
+        height: 25px;
+        font-size: 20px;
+        padding: 2px 6px 2px 6px;
+    }
+    .contactus .icon i#face {
+        height: 25px;
+        color: #0080cb;
+        font-size: 20px;
+        padding: 2px 2px 2px 16px;
+    }
+    footer {
+        padding: 50px 0;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
